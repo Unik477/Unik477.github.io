@@ -13,9 +13,9 @@
     />
   </head>
   <body>
-    <!-- <nav class="navbar "> -->
+    <nav class=" navbar navbar-dark bg-dark  mt-0 ">
       <div class="container-fluid">
-        <h3 class=" text-center " href="#">Weather App</h3>
+        <h3 class=" navbar-brand" href="#">Weather App</h3>
           
         <form class="d-flex" role="search">
           <input
@@ -31,10 +31,10 @@
         </form>
         
       </div>
-    <!-- </nav> -->
+    </nav>
 
-    <div class="container">
-      <h1 class="my-4 text-center">Weather For <span id="cityName"></span></h1>
+    <div  class="container">
+      <h1 class=" text-center" ">Weather For <span id="cityName"></span></h1>
       <main>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
           <div class="col">
@@ -45,9 +45,9 @@
               <div class="card-body">
                 <i class="bi bi-thermometer-sun " style="font-size: 70px;" ></i>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>Temperature is <span id="temp"></span></li>
-                  <li>Minimum Temperature is <span id="min_temp"></span></li>
-                  <li>Maximum Temperature is <span id="max_temp"></span></li>
+                  <li>Temperature is <span id="temp"></span> &#8451</li>
+                  <li>Minimum Temperature is <span id="min_temp"></span>&#8451</li>
+                  <li>Maximum Temperature is <span id="max_temp"></span>&#8451</li>
                 </ul>
                 <!-- <button
                   type="button"
@@ -66,7 +66,7 @@
               <div class="card-body">
                 <i class="bi bi-wind" style="font-size: 70px;"></i>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>Wind Speed is <span id="wind_speed"></span></li>
+                  <li>Wind Speed is <span id="wind_speed"></span>kmph</li>
                   <!-- <li>Wind degrees is <span id="wind_degrees"></span></li> -->
                   <li>Sunrise Time is <span id="sunrise"></span></li>
                   <li>Sunset Time is <span id="sunset"></span></li>
@@ -85,9 +85,9 @@
               <div class="card-body">
                 <i class="bi bi-clouds-fill" style="font-size: 70px;"></i>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>Cloud PCT is <span id="cloud_pct"></span></li>
-                  <li>Feels Like is <span id="feels_like"></span></li>
-                  <li>Humidity is <span id="humidity"></span></li>
+                  <li>Cloud PCT is <span id="cloud_pct"></span>%</li>
+                  <li>Feels Like is <span id="feels_like"></span>&#8451</li>
+                  <li>Humidity is <span id="humidity"></span>%</li>
                 </ul>
                 <!-- <button type="button" class="w-100 btn btn-lg btn-primary">
                   Contact us
