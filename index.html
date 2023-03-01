@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body style="background-image: url('bg.jpg');background-size: cover;">
     <nav class=" navbar navbar-dark bg-dark  mt-0 ">
       <div class="container-fluid">
         <h3 class=" navbar-brand" href="#">Weather App</h3>
@@ -34,7 +34,7 @@
     </nav>
 
     <div  class="container">
-      <h1 class=" text-center" ">Weather For <span id="cityName"></span></h1>
+      <h1 class=" text-center">Weather For <span id="cityName"></span></h1>
       <main>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
           <div class="col">
@@ -63,7 +63,7 @@
               <div class="card-header py-3 text-bg-warning border-warning">
                 <h4 class="my-0 fw-normal">Wind & Sunset/Sunrise</h4>
               </div>
-              <div class="card-body">
+              <div class=" bg-transparent card-body">
                 <i class="bi bi-wind" style="font-size: 70px;"></i>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li>Wind Speed is <span id="wind_speed"></span>kmph</li>
