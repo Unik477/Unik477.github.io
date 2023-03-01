@@ -26,6 +26,8 @@ const getWeather = (city) => {
       temp.innerHTML = response.temp;
       // wind_degrees.innerHTML = response.wind_degrees;
       wind_speed.innerHTML = response.wind_speed;
+
+     
     })
     .catch(err => console.error(err));
 };

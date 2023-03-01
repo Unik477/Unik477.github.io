@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-image: url('bg.jpg');background-size: cover;">
+  <body style="background-image: url('bg3.jpg');background-size: cover;">
     <nav class=" navbar navbar-dark bg-dark  mt-0 ">
       <div class="container-fluid">
         <h3 class=" navbar-brand" href="#">Weather App</h3>
@@ -25,7 +25,7 @@
             placeholder="Search City Name"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit" id="submit">
+          <button class="btn btn-outline-warning" type="submit" id="submit">
             Search
           </button>
         </form>
@@ -34,18 +34,20 @@
     </nav>
 
     <div  class="container">
-      <h1 class=" text-center">Weather For <span id="cityName"></span></h1>
       <main>
+        <h1 class=" text-center text-warning text-bg-light p-2 mt-2">Weather For <span id="cityName"></span></h1>
+        
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
           <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-success">
-              <div class="card-header py-3 text-bg-success border-success">
-                <h4 class="my-0 fw-normal">Temperature</h4>
+            <div class=" card-transparent mb-4 rounded-3 shadow-sm  border-success p-3" style="background-color: rgba(255, 255, 255, 0.53);">
+              <div class="card-header py-3  border-success">
+                <h4 class="my-0 fw-normal h3"><b>Temperature</b></h4>
               </div>
               <div class="card-body">
+              
                 <i class="bi bi-thermometer-sun " style="font-size: 70px;" ></i>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Temperature is <span id="temp"></span> &#8451</li>
+                <ul class="list-unstyled h5 mt-3 mb-4">
+                  <li>Temperature is <span id="temp"></span>&#8451</li>
                   <li>Minimum Temperature is <span id="min_temp"></span>&#8451</li>
                   <li>Maximum Temperature is <span id="max_temp"></span>&#8451</li>
                 </ul>
@@ -59,13 +61,13 @@
             </div>
           </div>
           <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-warning">
-              <div class="card-header py-3 text-bg-warning border-warning">
-                <h4 class="my-0 fw-normal">Wind & Sunset/Sunrise</h4>
+            <div class="card-transparent mb-4 rounded-3 shadow-sm border-warning p-3" style="background-color: rgba(255, 255, 255, 0.259);">
+              <div class="card-header py-3  border-warning">
+                <h4 class="my-0 fw-normal h3"><b>Wind & Sunset/Sunrise</b></h4>
               </div>
               <div class=" bg-transparent card-body">
                 <i class="bi bi-wind" style="font-size: 70px;"></i>
-                <ul class="list-unstyled mt-3 mb-4">
+                <ul class="list-unstyled h5 mt-3 mb-4">
                   <li>Wind Speed is <span id="wind_speed"></span>kmph</li>
                   <!-- <li>Wind degrees is <span id="wind_degrees"></span></li> -->
                   <li>Sunrise Time is <span id="sunrise"></span></li>
@@ -78,13 +80,13 @@
             </div>
           </div>
           <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-              <div class="card-header py-3 text-bg-primary border-primary">
-                <h4 class="my-0 fw-normal">More Details</h4>
+            <div class="card-transparent mb-4 rounded-3 shadow-sm border-primary p-3" style="background-color: rgba(255, 255, 255, 0.259);">
+              <div class="card-header py-3  border-primary">
+                <h4 class="my-0 fw-normal h3"><b>More Details</b></h4>
               </div>
               <div class="card-body">
                 <i class="bi bi-clouds-fill" style="font-size: 70px;"></i>
-                <ul class="list-unstyled mt-3 mb-4">
+                <ul class="list-unstyled h5 mt-3 mb-4">
                   <li>Cloud PCT is <span id="cloud_pct"></span>%</li>
                   <li>Feels Like is <span id="feels_like"></span>&#8451</li>
                   <li>Humidity is <span id="humidity"></span>%</li>
@@ -97,7 +99,7 @@
           </div>
         </div>
 
-        <h2 class="display-6 text-center mb-4 ">Other Cities</h2>
+        <h2 class="display-6 text-center mb-4 text-bg-light p-2">Other Cities</h2>
 
         <div class="table-responsive">
           <table class="table text-center">
@@ -197,5 +199,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    
   </body>
 </html>
